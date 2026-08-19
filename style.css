@@ -1,0 +1,25 @@
+
+:root{
+  --bg:#0b1020; --panel:#121a2f; --text:#f4f7fb; --muted:#b8c1d1;
+  --accent:#25f4ee; --accent2:#fe2c55; --border:#27324d;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:linear-gradient(135deg,#080c18,#121a2f);color:var(--text);line-height:1.65}
+header{padding:22px max(24px,calc((100% - 1050px)/2));border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;gap:20px}
+.brand{font-weight:800;letter-spacing:.5px;font-size:22px}.brand span{color:var(--accent)}
+nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-size:14px}
+nav a:hover{color:white}
+main{max-width:1050px;margin:auto;padding:70px 24px}
+.hero{display:grid;grid-template-columns:1.4fr .9fr;gap:40px;align-items:center;min-height:440px}
+.badge{display:inline-block;color:#071018;background:var(--accent);padding:6px 12px;border-radius:999px;font-size:12px;font-weight:bold}
+h1{font-size:clamp(42px,7vw,78px);line-height:1.02;margin:20px 0}
+h1 em{font-style:normal;color:var(--accent)}
+p{color:var(--muted);font-size:18px}
+.card{background:rgba(18,26,47,.9);border:1px solid var(--border);border-radius:24px;padding:32px;box-shadow:0 20px 60px rgba(0,0,0,.25)}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:35px}
+.feature{padding:22px;background:var(--panel);border:1px solid var(--border);border-radius:16px}
+.feature h3{margin:0 0 8px}.feature p{font-size:14px;margin:0}
+.cta{display:inline-block;margin-top:15px;padding:13px 20px;background:linear-gradient(90deg,var(--accent),#69e6ff);color:#06101b;text-decoration:none;font-weight:bold;border-radius:10px}
+.page{max-width:850px}.page h1{font-size:44px}.page h2{margin-top:38px}.page p,.page li{font-size:16px;color:var(--muted)}
+footer{border-top:1px solid var(--border);padding:28px 24px;color:#8590a5;text-align:center;font-size:13px}
+@media(max-width:700px){.hero{grid-template-columns:1fr}.features{grid-template-columns:1fr}header{flex-direction:column;align-items:flex-start}nav a{margin:0 16px 0 0}}
